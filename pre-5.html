@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./practical7.css">
+    <title>Form</title>
+    <style type="text/css">
+        *
+    {
+    margin: 0;
+    padding: 5px;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    body
+    {
+    background-color: rgb(192, 209, 229);
+    }   
+    .container
+    {
+    width: 50%;
+    background-color: rgb(216, 142, 45);
+    opacity: .6;
+    padding: 5px;
+    border: 2px solid black;
+    }
+    .r1c1
+    {
+    width: 50%;
+    display: inline-block;
+    border: 2px solid teal;
+    text-align: center;
+    }
+    .r2c1, .r3c1, .r4c1, .r5c1, .r6c1, .r7c1
+    {
+    display: inline-block;
+    margin-left: 0%;
+    }
+    .r2c2, .r3c2, .r4c2, .r5c2, .r6c2, .r7c2
+    {
+    display: inline-block;
+    margin-right: -2px;
+    }
+    .r8c1
+    {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    }
+    #btn
+    {
+    width: q00px;
+    font-size: large;
+    font-weight: bolder;
+    color: black;
+    
+    }
+    </style>
+</head>
+<body>
+    <center>
+    <div class="container">
+        <div class="r1">
+            <div class="r1c1">
+                <h1>Sign in form</h1>
+            </div>
+        </div>
+        <div class="r2">
+            <div class="r2c1">
+                <h3>Full Name</h3>
+            </div>
+            <div class="r2c2" >
+                <input type="text" id="fn">
+            </div>
+        </div>
+        <div class="r3">
+            <div class="r3c1">
+                <h3>Email</h3>
+            </div>
+            <div class="r3c2">
+                <input type="email">
+            </div>
+        </div>
+        <div class="r4">
+            <div class="r4c1">
+                <h3>Password</h3>
+            </div>
+            <div class="r4c2">
+                <input type="password">
+            </div>
+        </div>
+        <div class="r5">
+            <div class="r5c1">
+                <h3>conform Password</h3>
+            </div>
+            <div class="r5c2">
+                <input type="password">
+            </div>
+        </div>
+        <div class="r6">
+            <div class="r6c1">
+                <h3>Address</h3>
+            </div>
+            <div class="r6c2">
+                <textarea cols="15" rows="5"></textarea>
+            </div>
+        </div>
+        <div class="r7">
+            <div class="r7c1">
+                <h3>Phone number</h3>
+            </div>
+            <div class="r7c2">
+                <input type="tel">
+            </div>
+        </div>
+        <div class="r8">
+            <div class="r8c1">
+                <input type="button" value="send" id="btn" onclick="myfun()">
+            </div>
+        </div>
+    </div>
+
+</center>
+</body>
+</html>
